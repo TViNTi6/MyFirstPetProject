@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+:root{
+    --main-color:'white'
+    --secondary-color:'black'
+    --other-color:purple;
+    --main-font:'Orbitront';
+    --secondary-font:monospace;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+ul,li{
+    list-style-type: none;
+}
+body{
+    background-color: #45d08d;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+  align-items: center;
+    width:100vw;
+    height: 70px;
+    background-color: azure;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo{
+    display: flex;
+    font-size: 24px;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 15px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    
+}
+nav a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 1px;
+}
+header button{
+    width:130px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f5f5dc;
+    color: black;
+    font-family: "Oswald", serif;
+}
+footer{
+    min-height: 30vh;
+    background-color: azure;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+footer input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: inset 0px 0px 5px black;
+    text-align: center;
+}
+footer button{
+    width:130px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f5f5dc;
+    color: black;
+    font-family: "Oswald", serif;
+}
+.namefoot{
+    display: flex;
+    font-size: 24px;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 15px;
+    
+}
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.481);
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    font-family: Arial;
+}
+.mobile-menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover{
+    color: orange;
+}
+
+
+
+.main-sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    min-height: 90vh;
+}
+
+.main-sect h1{
+    font-size: 84px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: Arial;
+    height:200px;
+    animation: movieFont 2s 1;
+}
+.main-sect img{
+    width: 500px;
+    position: absolute;
+    left: calc(50% - 250px);
+   top: calc(50% - 70px);
+   animation: slideUp 3s 1;
+}
+
+.About{
+    display: flex;
+    width:99vw;
+    height:80vh ;
+    font-family: "Oswald", serif;;
+    background-color:azure;
+    border-radius: 15px;
+    letter-spacing: 20px;
+   
+}
+
+
+
+
+.about{
+width: 100vw;
+min-height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.about-design{
+    animation: slideUp 3s 1 ;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-design::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  border-radius: 50%;
+  background-color: blue;
+  height: 100px;
+  left: calc(50%);
+  bottom: 100px;
+  z-index: -1;
+  box-shadow: 0px 0px 3px 1px blue;
+  animation: lightToDown 2s infinite;
+}
+.game_one{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 15px;
+    position: absolute;
+    left: calc(50% - 140px);
+    top: calc(50% - 200px);
+    transition: all .3s ease;
+}
+
+#card-1{
+  z-index: 5;
+  transform: rotate(0) translateX(0);
+}
+
+
+
+#card-2{
+    z-index: 4;
+    transform: rotate(0) translateX(0);
+}
+#card-5{
+    z-index: 1;
+    transform: rotate(0) translateX(0);
+}
+
+
+#card-3{
+    z-index: 3;
+    transform: rotate(0) translateX(0);
+ 
+}
+
+#card-4{
+    transform: rotate(0) translateX(0);
+    z-index: 2;
+}
+
+.card-container{
+    width: 560px;
+    height: 780px;
+    
+  margin: 0 auto;
+}
+.card-container:hover #card-3{
+    transform: rotate(-25deg) translateX(-150px);
+}
+
+.card-container:hover #card-2{
+    transform: rotate(25deg) translateX(150px);
+}
+.card-container:hover #card-4{
+    transform: rotate(30deg) translateX(300px);
+}
+.card-container:hover #card-5{
+    transform: rotate(-30deg) translateX(-300px);
+}
+
+
+
+.fon{
+    border-radius: 25px;
+}
+.but_one{
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 15px;
+    background-color: royalblue;
+    font-family: "Oswald", serif;;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.but_one :hover{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 15px;
+    background-color: rgb(227, 14, 14);
+    font-family: "Oswald", serif;;
+}
+.text_vestern{
+    display: flex;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.robo{
+    display: flex;
+    width: 40vw;
+    height: 40vh;
+
+}
+.window{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 60vh;
+    gap: 5px;
+    background-color: azure;
+    border-radius: 20px;
+}
+.support{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textsupport{
+   
+    
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texxt{
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+}
+.mail{ 
+    height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+}
+.tele{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    height: 130px;
+}
+.pop{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 31px;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-info{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(8px);
+}
+.about-info_text{
+    width: 70%;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes lightToDown{
+0%{
+    transform: translateY(0);
+    opacity: 0;
+}
+30%{
+    opacity: 1;
+}
+80%{
+    transform: translateY(50vh);
+    opacity: 1;
+}
+100%{
+    transform:translateY(50vh) ;
+    opacity: 0;
+}
+}
+.about-design img{
+    width:400px;
+    filter: drop-shadow(0px 0px 15px white);
+}
+.nameAbout{
+    font-family: "Oswald", serif;;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+@keyframes slideUp{
+    0%{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes movieFont{
+    0%{
+        opacity: 0;
+        transform: scale(5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.tri{
+    display: none;
+}
+
+
+
+

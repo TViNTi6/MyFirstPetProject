@@ -1,0 +1,31 @@
+
+
+@media screen and (max-width:500px){
+   
+    .logo{
+    display: flex;
+    font-size: 24px;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 15px;
+    }
+    .oh{
+        display: none;
+    }
+    .tri{
+    display: flex;
+    font-size: 24px;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 15px;
+    }
+    nav{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    .robo{
+        display: none;
+    }
+}
