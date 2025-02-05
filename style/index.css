@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url(./media.css);
 .anton-regular {
     font-family: "Anton", serif;
     font-weight: 400;
@@ -435,3 +436,14 @@ backdrop-filter: blur(8px);
 
 
 
+
+@media screen and (max-width:430px){
+    .about{
+        height: 50vh;
+        background-color: red;
+    }
+
+    body{
+        background-color: red;
+    }
+}
